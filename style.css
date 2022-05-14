@@ -3,13 +3,16 @@
   padding: 0;
 }
 
+body {
+  background-color: #aa8c39;
+}
+
 header {
-  background-color: rgba(196, 153, 12, 0.7);
   padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 5px solid rgb(134, 111, 9);
+  border: 5px solid #553f00;
   height: 70px;
 }
 
@@ -19,4 +22,28 @@ header {
 
 .image-logo {
   height: 100px;
+}
+
+.container-texto1 {
+  margin-top: 15px;
+  border: 1px solid black;
+}
+
+.texto1 {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 10px;
+}
+
+.titulo2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+
+.container-lista {
+  padding: 10px;
+  font-size: 1.2rem;
+  list-style: inside;
+  text-align: center;
 }
