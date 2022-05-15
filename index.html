@@ -30,6 +30,89 @@
         <li>Na Cifra de César você precisa selecionar o número de chave</li>
       </ol>
     </div>
+    <section>
+      <form>
+        <label for="selecionar">Qual sua escolha:</label>
+        <select name="selecionar" id="selecionar">
+          <option value="1" id="base64" class="valor">Base64</option>
+          <option value="2" id="cifradecesar" class="valor">
+            Cifra de César
+          </option>
+          <br />
+        </select>
+
+        <div class="container-inicial">
+          <label for="codificar">Você quer:</label>
+          <div>
+            <input
+              type="radio"
+              name="codificar"
+              id="codificar"
+              value="codificar"
+            />
+            <label for="codificar" class="codificar">Codificar</label>
+          </div>
+
+          <div>
+            <input
+              type="radio"
+              name="decodificar"
+              id="decodificar"
+              value="decodificar"
+            />
+
+            <label for="decodificar" class="decodificar">Decodificar</label>
+          </div>
+        </div>
+
+        <div id="chave">
+          <br />
+          <label for="caixa-chave"
+            >Informe um número de chave para troca de letras:</label
+          >
+          <input
+            type="number"
+            id="caixa-chave"
+            class="caixa-menssagem"
+            min="1"
+            max="25"
+            required
+          />
+        </div>
+
+        <label for="msg-entrada" id="label-msg-entrada"
+          >Digite sua mensagem:
+        </label>
+        <div class="container-mensagem">
+          <textarea
+            id="msg-ientrada"
+            class="msg"
+            name="msg-saida"
+            rows="5"
+            placeholder="Digite sua mensagem aqui"
+          ></textarea>
+        </div>
+
+        <div class="container-mensagem">
+          <div id="btn-submit" class="btn-submit">
+            <button id="btn" class="btn main" type="submit" value="">
+              codificar
+            </button>
+          </div>
+
+          <label for="msg-output">Resultado da sua mensagem a baixo:</label>
+          <div class="container-mensagem">
+            <textarea
+              id="msg-output"
+              name="msg-output"
+              class="msg"
+              rows="5"
+              placeholder="O resultado vai aparecer aqui"
+            ></textarea>
+          </div>
+        </div>
+      </form>
+    </section>
 
     <script src="./index.js"></script>
   </body>
